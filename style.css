@@ -1,0 +1,67 @@
+/* Базовые кринж-настройки внешнего вида */
+body {
+    background-color: #facefa; /* Розовый цвет для ноутбуков */
+    color: #d8ffd8; /* Зеленый текст */
+    font-family: "Comic Sans MS", "Chalkboard SE", sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Шапка страницы */
+h1 {
+    background-color: #fffff8;
+    color: #550404;
+    border: 5px dashed #afafff;
+    padding: 15px;
+}
+
+/* Навигационное меню по всем 30 страницам */
+.menu {
+    background-color: #000045;
+    padding: 15px;
+    border: 4px ridge #ffffff;
+    margin-bottom: 20px;
+}
+.menu a {
+    color: #ffffff;
+    margin: 5px 10px;
+    display: inline-block;
+    text-decoration: underline;
+}
+
+/* Основной блок с контентом */
+.content-box {
+    background-color: #ffffff;
+    color: #000000;
+    border: 10px double #010101;
+    padding: 30px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Настройка под твои угарные изображения */
+.cringe-pic {
+    max-width: 100%;
+    height: auto;
+    border: 5px solid #000000;
+    margin-top: 15px;
+}
+
+/* Футер с твоей информацией в самом низу */
+footer {
+    margin-top: 50px;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px;
+    border-top: 5px solid #972b93;
+}
+
+/* Адаптивность: автоматическая смена фона под разные устройства */
+@media (max-width: 1024px) {
+    body { background-color: #e9ffff; } /* Голубой фон для планшетов */
+}
+@media (max-width: 600px) {
+    body { background-color: #ffff00; } /* Желтый фон для телефонов */
+    .menu a { display: block; margin: 10px 0; } /* Меню в столбик на мобилке */
+}
